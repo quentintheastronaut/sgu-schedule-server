@@ -31,6 +31,11 @@ function occurrences(string, subString, allowOverlapping) {
   return n;
 }
 
+app.get("/", (req, res) => {
+ 
+  res.status(200).send("Hello");
+});
+
 app.get("/profile", (req, res) => {
   if (!req.query.id) {
     const response = {
