@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 8000;
-const axios = require("axios").default;
+const port = 3000;
 var cors = require("cors");
 const request = require("request-promise");
 const cheerio = require("cheerio");
@@ -250,5 +249,5 @@ app.get("/schedule", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log(`SGU-Schedule server is running at port ${port}`);
 });
